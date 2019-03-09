@@ -1,0 +1,14 @@
+// Project configuration
+brick.pref {
+    // Main class //
+    //mainClass = "example.programming.HelloWorld"
+    //mainClass = "example.led.LedDisp"
+    //mainClass = "example.key.KeyGet"
+    mainClass = "example.screen.SetPoint"
+    mainClass = "example.screen.ShowFont"
+
+    // Brick connection parameters //
+    sshHost = "10.42.0.3"
+    sshUser = "robot"
+    sshPassword = "maker"
+}

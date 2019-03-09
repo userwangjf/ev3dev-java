@@ -1,0 +1,18 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == "com.github.ev3dev-lang-java") {
+                useModule("com.github.ev3dev-lang-java:${requested.id.name}:${requested.version}")
+            }
+        }
+    }
+    repositories {
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        maven {url "http://central.maven.org/maven2/" }
+        jcenter()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'template_project_gradle'
